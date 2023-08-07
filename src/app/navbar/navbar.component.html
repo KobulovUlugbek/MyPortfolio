@@ -1,0 +1,40 @@
+<nav class="navbar">
+    <div class="navbar-content">
+      <div class="navbar-left">
+        <span routerLink="/" (click)="navigateToSection()">Ulug<span style="color: #16c4eb">b</span>e<span
+            style="color: #2f2bea">k</span></span>
+      </div>
+      <div class="navbar-right-links">
+        <a class="links" *ngIf="!imprintSite" href="#about-me">About me</a>
+        <a class="links" *ngIf="!imprintSite" href="#skills-section">Skills</a>
+        <a class="links" *ngIf="!imprintSite" href="#portfolio-section"
+          >Portfolio</a
+        >
+        <a class="links" *ngIf="imprintSite" routerLink="/">Home</a>
+      </div>
+      <div id="menuToggle">
+        <input type="checkbox" #menuToggleInput />
+  
+        <span></span>
+        <span></span>
+        <span></span>
+  
+        <ul id="menu">
+          <a href="#about-me" *ngIf="!imprintSite" #menuLink><li>About me</li></a>
+          <a href="#skills-section" *ngIf="!imprintSite" #menuLink
+            ><li>My Skills</li></a
+          >
+          <a href="#portfolio-section" *ngIf="!imprintSite" #menuLink
+            ><li>Portfolio</li></a
+          >
+          <a href="#contact-section" *ngIf="!imprintSite" #menuLink
+            ><li>Contact</li></a
+          >
+          <a href="#contact-section" *ngIf="imprintSite" #menuLink
+            ><li>Home</li></a
+          >
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
