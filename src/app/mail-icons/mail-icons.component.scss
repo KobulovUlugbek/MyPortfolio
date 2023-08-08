@@ -271,3 +271,17 @@
     }
   }
   
+  .shadow1{
+    width: 300px;
+    height: 700px;
+    z-index: 20000;
+    position: absolute;
+    right: -60px;
+    top: 700px;
+    opacity: 1;
+
+    @media (min-width: 1520px){
+      top: 800px;
+    }
+
+  }

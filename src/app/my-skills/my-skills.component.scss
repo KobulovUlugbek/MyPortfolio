@@ -1,0 +1,240 @@
+.skill-container {
+  background-color: #141D2F;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 85px;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 200;
+}
+
+.icon-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 150px;
+  padding-right: 200px;
+  position: relative;
+}
+
+.icon{
+  width: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  .skill-image, .skill-span {
+    transition: transform 0.3s ease-in-out;
+}
+  span{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  &:hover {
+    .skill-image {
+        transform: translateY(100%);
+    }
+    .skill-span {
+        transform: translateY(-200%);
+    }
+}
+}
+
+.skills-font-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-right: 100px;
+  transform-style: preserve-3d;
+  h1{
+    color: white;
+    font-size: 84px;
+    margin: 0;
+  }
+  span{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.button-container{
+  height: 70px;
+  margin-top: 20px;
+  button{
+    background-color: #00BEE8;
+    border-style: unset;
+    width: 175px;
+    height: 60px;
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    &:hover{
+      width: 185px;
+      height: 70px;
+      background-color: #4B47FF;
+  }}
+}
+
+.purple-line{
+  margin-top: 80px;
+  height: 5px;
+  width: 200px;
+  background-color: #4B47FF;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.material-design-animation {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  span{
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  img {
+    transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    img {
+        transform: translateY(100%);
+    }
+    span {
+        transform: translateY(-150%);
+    }
+  }
+}
+
+#skills-section {
+  padding-bottom: 150px;
+  background-color: #141D2F;
+}
+
+@media(max-width: 1820px){
+  .skills-font-container {
+    animation: none !important;
+  }
+  .icon-container {
+    animation: none !important;
+    left: 0% !important;
+  }
+  .skill-container{
+    padding-bottom: 100px;
+  }
+}
+
+@media(max-width: 1798px){
+  .icon-container{
+    gap: 100px;
+  }
+  .purple-line {
+    margin-top: 60px;
+  }
+}
+
+@media(max-width: 1617px){
+  .purple-line {
+    margin-top: 150px;
+  }
+}
+
+@media(max-width: 1294px){
+  .skill-container {
+    flex-direction: column-reverse !important;
+    padding-left: 0;
+  }
+
+  .skills-font-container{
+    margin-right: 0;
+  }
+
+  .purple-line {
+    display: none;
+  }
+  .icon-container {
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-left: 100px;
+    gap: 150px !important;
+  }
+}
+
+@media(max-width: 1137px){
+  .icon-container{
+    gap: 120px !important;
+  }
+}
+
+@media(max-width: 870px){
+  .skills-font-container{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .icon{
+    img{
+      height: 50px;
+    }
+  }
+  .icon-container{
+    gap: 100px !important;
+  }
+}
+
+@media(max-width: 820px){
+  #skills-section{
+    padding-bottom: 100px !important;
+  }
+  .skills-font-container{
+    span {
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+    }
+  }
+  .skill-container {
+    padding-bottom: 0 !important;
+  }
+}
+
+@media(max-width: 440px){
+  .icon-container{
+    gap: 85px !important;
+  }
+}
+
+@media(max-width: 422px){
+  .icon-container{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media(max-width: 370px){
+  .skills-font-container{
+    button {
+      padding: 8px !important;
+    }
+  }
+}
+
+@media(max-width: 325px){
+  .icon-container{
+    gap: 50px !important;
+  }
+}

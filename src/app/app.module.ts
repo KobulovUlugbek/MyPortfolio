@@ -8,6 +8,7 @@ import { StartsiteComponent } from './startsite/startsite.component';
 import { MailIconsComponent } from './mail-icons/mail-icons.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     StartsiteComponent,
     MailIconsComponent,
     AboutMeComponent,
-    NavbarComponent
+    NavbarComponent,
+    MySkillsComponent
   ],
   imports: [
     BrowserModule,
