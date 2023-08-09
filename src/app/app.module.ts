@@ -9,6 +9,8 @@ import { MailIconsComponent } from './mail-icons/mail-icons.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
+import { MyWorksHeaderComponent } from './my-works-header/my-works-header.component';
+import { JoinComponent } from './join/join.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
     MailIconsComponent,
     AboutMeComponent,
     NavbarComponent,
-    MySkillsComponent
+    MySkillsComponent,
+    MyWorksHeaderComponent,
+    JoinComponent
   ],
   imports: [
     BrowserModule,
