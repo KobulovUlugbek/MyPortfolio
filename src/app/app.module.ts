@@ -11,6 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyWorksHeaderComponent } from './my-works-header/my-works-header.component';
 import { JoinComponent } from './join/join.component';
+import { EllPolloLocoComponent } from './ell-pollo-loco/ell-pollo-loco.component';
+import { KochweltComponent } from './kochwelt/kochwelt.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { JoinComponent } from './join/join.component';
     NavbarComponent,
     MySkillsComponent,
     MyWorksHeaderComponent,
-    JoinComponent
+    JoinComponent,
+    EllPolloLocoComponent,
+    KochweltComponent
   ],
   imports: [
     BrowserModule,
