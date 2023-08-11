@@ -13,6 +13,7 @@ import { MyWorksHeaderComponent } from './my-works-header/my-works-header.compon
 import { JoinComponent } from './join/join.component';
 import { EllPolloLocoComponent } from './ell-pollo-loco/ell-pollo-loco.component';
 import { KochweltComponent } from './kochwelt/kochwelt.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { KochweltComponent } from './kochwelt/kochwelt.component';
     MyWorksHeaderComponent,
     JoinComponent,
     EllPolloLocoComponent,
-    KochweltComponent
+    KochweltComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

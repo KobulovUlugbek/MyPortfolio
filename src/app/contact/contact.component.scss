@@ -1,0 +1,541 @@
+.contact-headline-container{
+    display: flex;
+    align-items: center;
+    background-color: #141D2F;
+    gap: 30px;
+    padding-top: 150px;
+    h1{
+      color: white;
+      font-size: 84px;
+    }
+  }
+  
+  .purple-line{
+    height: 5px;
+    width: 60px;
+    background-color: #4B47FF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .contact-me-container{
+    background-color: #141D2F;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  
+  .solving-problem-container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    h2{
+      margin-top: 0;
+      color: white;
+      font-size: 40px;
+    }
+    p{
+      color: white;
+      font-size: 20px;
+    }
+    span{
+      color: white;
+      font-size: 20px;
+    }
+  }
+  
+  .form-container{
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 500px;
+    .input-bg-warning {
+      background: url('/assets/img/red-alert.png') no-repeat scroll 15px 15px;
+      background-position: calc(100% - 15px) 15px;
+  }
+    .transparent {
+      color: transparent;
+  }
+  input.has-content,
+  textarea.has-content {
+      border-color: #54AC15 !important;
+  }
+  input.empty-focused,
+  textarea.empty-focused {
+      border-color: #E61C40 !important;
+  }
+  input:focus,
+  textarea:focus {
+      background: #141D2F;
+      color: white;
+      border: 1px solid #E61C40;
+      outline: none;
+  }
+  input:focus::placeholder,
+  textarea:focus::placeholder {
+      color: transparent;
+  }
+    input{
+      font-family: 'Poppins', sans-serif;
+      background-color: #141D2F;
+      padding: 16px;
+      border-style: unset;
+      border: 1px solid #4B47FF;
+      border-radius: 8px;
+      width: 800px;
+      color: white;
+      font-size: 20px;
+      transition: border 0.1s ease;
+      &::placeholder{
+        color: white;
+        font-size: 20px;
+      }
+      &:hover{
+        border: 1px solid #00BEE8;
+        cursor: pointer;
+      }
+    }
+    textarea{
+      padding: 16px;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+      background-color: #141D2F;
+      border-style: unset;
+      border: 1px solid #4B47FF;
+      border-radius: 8px;
+      color: white;
+      width: 800px;
+      height: 150px;
+      resize: none;
+      background: url('/assets/img/textarea-symbol.png') no-repeat;
+      background-origin: content-box;
+      background-position: right -8px bottom -8px;
+      &::placeholder{
+        color: white;
+        font-size: 20px;
+      }
+      &:hover{
+        border: 1px solid #00BEE8;
+        cursor: pointer;
+      }
+  
+    }
+    button{
+        background-color: #00BEE8;
+        border-style: unset;
+        width: 250px;
+        height: 60px;
+        padding: 16px;
+        border-radius: 8px;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        transition: 0.1s ease;
+        &:hover{
+          width: 260px;
+          height: 70px;
+          background-color: #4B47FF;
+      }}
+    }
+  
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    span{
+      color: #E61C40;
+      font-size: 18px;
+    }
+    img {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+  }
+  }
+  
+  .d-none{
+    display: none !important;
+  }
+  
+  .contact-button.send-button.sent {
+    animation: shrinkButton 1s ease-in-out forwards;
+  }
+  
+  @keyframes shrinkButton {
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes zoomOut{
+    100%{
+      width: 80%;
+    }
+  }
+  
+  .message-sent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .message-sent {
+      font-size: 32px;
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+      animation: writinMachine 1s steps(50, end)  forwards;
+    }
+  }
+  
+  @keyframes writinMachine {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .scroll-up-container {
+    height: 50px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    background-color: #141D2F;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    img{
+      height: 50px;
+      cursor: pointer;
+      transition: opacity 0.01s;
+      position: absolute;
+    }
+  }
+  
+  .img1 {
+    opacity: 1;
+    &:hover {
+      opacity: 0;
+    }
+  }
+  
+  .img2 {
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  
+  @media(max-width: 1590px){
+    .form-container {
+      input {
+        width: 600px;
+      }
+      textarea {
+        width: 600px;
+      }
+    }
+  }
+  
+  @media(max-width: 1380px){
+    .solving-problem-container {
+      width: 400px;
+    }
+    .form-container {
+      input{
+        font-size: 18px !important;
+        &::placeholder{
+          font-size: 18px !important;
+        }
+      }
+      textarea{
+        font-size: 18px !important;
+        &::placeholder{
+          font-size: 18px !important;
+        }
+      }
+    }
+    .form-container {
+      button {
+        .message {
+          font-size: 24px !important;
+        }
+      }
+    }
+  }
+  
+  @media(max-width: 1270px){
+    .form-container {
+      padding-right: 25px !important;
+    }
+    .contact-headline-container {
+      .purple-line {
+        width: 120px;
+      }
+    }
+    .contact-me-container {
+      padding-left: 30px !important;
+    }
+    .scroll-up-container {
+      padding-right: 25px !important;
+    }
+  }
+  
+  @media(max-width: 1200px){
+    .contact-headline-container {
+      margin-bottom: 50px !important;
+      flex-direction: column-reverse;
+      h1 {
+        margin-bottom: 0px !important;
+      }
+      .purple-line {
+        width: 300px !important;
+      }
+    }
+  }
+  
+  @media(max-width: 1120px){
+    .form-container {
+      input {
+        width: 500px;
+      }
+      textarea {
+        width: 500px;
+      }
+    }
+    .contact-me-container {
+      padding-bottom: 25px !important;
+    }
+    .contact-headline-container {
+      padding-top: 100px !important;
+    }
+  }
+  
+  @media(max-width: 1030px){
+    .contact-me-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px !important;
+      padding-left: 0 !important;
+    }
+    .form-container {
+      input {
+        width: 750px;
+      }
+      textarea {
+        width: 750px;
+      }
+    }
+    .solving-problem-container {
+      width: 790px;
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      span {
+        text-align: center;
+      }
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    .contact-headline-container {
+      gap: 10px !important;
+    }
+    .scroll-up-container {
+      padding-right: 100px !important;
+    }
+    .contact-purple-shadow {
+      z-index: 50;
+      left: 0 !important;
+      top: 650px !important;
+      height: 350px;
+    }
+  }
+  
+  @media(max-width: 980px){
+    .scroll-up-container {
+      padding-right: 75px !important;
+    }
+  }
+  
+  @media(max-width: 900px){
+    .form-container {
+      input {
+        width: 650px;
+      }
+      textarea {
+        width: 650px;
+      }
+    }
+    .solving-problem-container {
+      width: 600px;
+    }
+  }
+  
+  @media(max-width: 770px){
+    .form-container {
+      input {
+        width: 550px;
+      }
+      textarea {
+        width: 550px;
+      }
+    }
+    .solving-problem-container {
+      width: 500px;
+    }
+  }
+  
+  @media(max-width: 700px){
+    .form-container {
+      input{
+        font-size: 16px !important;
+        &::placeholder{
+          font-size: 16px !important;
+        }
+      }
+      textarea{
+        font-size: 16px !important;
+        &::placeholder{
+          font-size: 16px !important;
+        }
+      }
+    }
+    .scroll-up-container {
+      padding-right: 50px !important;
+    }
+    .input-bg-warning {
+      background: url('/assets/img/red-alert.png') no-repeat scroll 15px 15px !important;
+      background-position: calc(100% - 13px) 13px !important;
+  }
+  .wrapper {
+    img {
+      right: 14px !important;
+      top: 14px !important;
+    }
+  }
+  }
+  
+  @media(max-width: 650px){
+    .form-container {
+      input {
+        width: 450px !important;
+      }
+      textarea {
+        width: 450px !important;
+      }
+    }
+    .solving-problem-container {
+      width: 400px !important;
+    }
+  }
+  
+  @media(max-width: 550px){
+    .form-container {
+      input {
+        width: 350px !important;
+      }
+      textarea {
+        width: 350px !important;
+      }
+    }
+    .solving-problem-container {
+      width: 350px !important;
+    }
+  }
+  
+  @media(max-width: 475px){
+    .form-container {
+      input{
+        font-size: 14px !important;
+        &::placeholder{
+          font-size: 14px !important;
+        }
+      }
+      textarea{
+        font-size: 14px !important;
+        &::placeholder{
+          font-size: 14px !important;
+        }
+      }
+      button {
+        width: 155px !important;
+        .message {
+          font-size: 18px !important;
+        }
+      }
+    }
+    .scroll-up-container {
+      padding-right: 35px !important;
+    }
+  }
+  
+  @media(max-width: 450px){
+    .input-bg-warning {
+      background: url('/assets/img/red-alert.png') no-repeat scroll 15px 15px !important;
+      background-position: calc(100% - 12px) 12px !important;
+  }
+  .wrapper {
+    img {
+      right: 13px !important;
+      top: 13px !important;
+    }
+  }
+    .form-container {
+      padding-right: 0 !important;
+      input {
+        width: 250px !important;
+      }
+      textarea {
+        width: 250px !important;
+      }
+    }
+    .solving-problem-container {
+      width: 250px !important;
+    }
+    .contact-headline-container
+    .purple-line {
+      width: 175px !important;
+    }
+    .contact-me-container {
+      padding-left: 0 !important;
+    }
+    .scroll-up-container {
+      padding-right: 75px !important;
+    }
+  }
+  
+  @media(max-width: 370px){
+    .form-container {
+      button {
+        height: 50px !important;
+      }
+    }
+  }
+  .scroll-up-container {
+    padding-right: 30px !important;
+  }
+  
+  
+  @media(max-width: 350px){
+    .form-container {
+      input {
+        width: 200px !important;
+      }
+      textarea {
+        width: 200px !important;
+      }
+    }
+    .solving-problem-container {
+      width: 225px !important;
+    }
+    .scroll-up-container {
+      padding-right: 40px !important;
+    }
+  }
+  
