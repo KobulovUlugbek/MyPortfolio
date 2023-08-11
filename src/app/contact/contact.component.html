@@ -24,7 +24,10 @@
         (blur)="onBlur($event)"
         (focus)="onFocus($event, 'name')"
       />
-      <span [class.transparent]="!showWarningName">Your name is required</span>
+     
+      <div class="message-box">
+        <span *ngIf="showWarningName">Your name is required</span>
+      </div>
       <img *ngIf="showGreenCheckName" src="/assets/img/green-go.png" />
     </div>
 
@@ -39,9 +42,9 @@
         (blur)="onBlur($event)"
         (focus)="onFocus($event, 'email')"
       />
-      <span [class.transparent]="!showWarningEmail"
-        >Your email is required</span
-      >
+      <div class="message-box">
+        <span *ngIf="showWarningEmail">Your email is required</span>
+      </div>
       <img *ngIf="showGreenCheckEmail" src="/assets/img/green-go.png" />
     </div>
     <div class="wrapper">
@@ -55,9 +58,9 @@
         (blur)="onBlur($event)"
         (focus)="onFocus($event, 'message')"
       ></textarea>
-      <span [class.transparent]="!showWarningMessage"
-        >Your message is empty</span
-      >
+      <div class="message-box">
+        <span *ngIf="showWarningMessage">Your message is required</span>
+      </div>
       <img *ngIf="showGreenCheckMessage" src="/assets/img/green-go.png" />
     </div>
     <button
