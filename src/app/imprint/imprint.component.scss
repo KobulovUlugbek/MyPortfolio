@@ -1,0 +1,40 @@
+.imprint-container {
+  background-color: #141D2F;
+  padding-top: 100px;
+  padding-left: 90px;
+  padding-bottom: 32px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+
+  h1{
+    font-size: 44px !important;
+    color: white;
+  }
+
+  h2{
+    color: white;
+    font-size: 25px !important;
+    margin: 0;
+  }
+  span{
+    font-size: 20px;
+    color: white;
+  }
+  p{
+    font-size: 20px;
+    color: white;
+    line-height: 26px;
+  }
+
+  a{
+    text-decoration: none!important ;
+    color: white;
+  }
+}
+
+@media (max-width: 1270px){
+  .imprint-container {
+    padding-left: 30px !important;
+  }
+}

@@ -16,6 +16,8 @@ import { KochweltComponent } from './kochwelt/kochwelt.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     JoinComponent,
     EllPolloLocoComponent,
     KochweltComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,
