@@ -21,8 +21,6 @@
         placeholder="Your name"
         #nameField
         (input)="onInput('name')"
-        (blur)="onBlur($event)"
-        (focus)="onFocus($event, 'name')"
       />
      
       <div class="message-box">
@@ -39,8 +37,6 @@
         #emailField
         placeholder="Your email"
         (input)="onInput('email')"
-        (blur)="onBlur($event)"
-        (focus)="onFocus($event, 'email')"
       />
       <div class="message-box">
         <span *ngIf="showWarningEmail">Your email is required</span>
@@ -55,8 +51,6 @@
         placeholder="Your message"
         #messageField
         (input)="onInput('message')"
-        (blur)="onBlur($event)"
-        (focus)="onFocus($event, 'message')"
       ></textarea>
       <div class="message-box">
         <span *ngIf="showWarningMessage">Your message is required</span>

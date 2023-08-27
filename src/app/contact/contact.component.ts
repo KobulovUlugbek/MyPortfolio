@@ -54,7 +54,7 @@ export class ContactComponent implements OnInit {
 
       setTimeout(() => {
         this.resetForm(); // Call the reset method after 2 seconds
-      }, 2000);
+      }, 5000);
     }, 800);
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
@@ -164,18 +164,6 @@ export class ContactComponent implements OnInit {
     this[`${oneInputField}`] = this.target.value.length > 0;
   }
 
-  onFocus(event: Event, inputType: string) {
-    this.target = event.target as HTMLInputElement;
+ 
 
-    if (this.target.value.length === 0) {
-      this.target.classList.add('input-bg-warning');
-      this.showRequiredTextOnFocus(inputType);
-    }
-  }
-
-  showRequiredTextOnFocus(inputType: string) {
-    let oneInputField =
-      'showWarning' + inputType.charAt(0).toUpperCase() + inputType.slice(1);
-    this[`${oneInputField}`] = true;
-  }
 }
